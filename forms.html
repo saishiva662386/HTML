@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+
+
+    <!-- forms are used to collect the data / information from the end user , the data is sent to the server for processing , it will be stored in the data base  -->
+
+    <!-- for and id is used to bind / connect both input tag and label tag by giving same values  -->
+
+    <!--! name attribute : it will store / send the data into the url  -->
+
+    <!-- type attribute : it is used to tell the input box what type of data need to added  -->
+
+    <fieldset>
+
+        <legend align="center">Personal Details</legend>
+
+        <form align="center" method="post" action="backend ">
+
+
+            <!-- mr , miss , mrs -->
+
+            <!-- <label for="salu">Salutation</label> <br>
+            <select name="Salutation" id="salu">
+                <option value="none">--None--</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Miss.">Miss.</option>
+                <option value="Mrs.">Mrs.</option>
+            </select> -->
+
+
+            <label for="salu">Salutation:</label>
+            <input type="text" name="salutation" list="salu">
+            <datalist id="salu">
+                <option value="none">--None--</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Miss.">Miss.</option>
+                <option value="Mrs.">Mrs.</option>
+            </datalist>
+
+
+            <br> <br>
+        
+
+            <label for="fn">FirstName : </label>
+            <input 
+            type="text" 
+            id="fn" 
+            name="fname"
+
+            required 
+            placeholder="Enter your FirstName"
+            minlength="3"
+            maxlength="10"
+            value="NATIONAL COLLEGE"
+            readonly
+            disabled >
+
+            <br> <br>
+
+            <label for="ln">LastName : </label>
+            <input type="text" id="ln" name="lname" autofocus>
+
+            <br> <br>
+
+            <label for="">Gender : </label>
+
+            <input type="radio" name="gender" id="m">
+            <label for="m">Male</label>
+
+            <input type="radio" name="gender" id="f">
+            <label for="f">Female</label>
+
+            <br><br>
+
+            <label for="mail">Email :</label>
+            <input type="email" id="mail" name="email">
+
+            <br> <br>
+
+            <label for="p"> Password :</label>
+            <input type="password" id="p">
+
+            <br> <br>
+
+            <label for="d">Date Of Birth : </label>
+            <input type="date" name="date" id="d">
+
+            <br> <br>
+
+
+            <label for="add">Address : </label> <br>
+            <textarea name="address" id="add" cols=40" rows="3"></textarea>
+
+
+            <br> <br>
+
+
+            <label for="">Skills :</label> <br>
+
+            <input type="checkbox" name="java" id="j">
+            <label for="j">Java</label> <br>
+
+            <input type="checkbox" name="python" id="p">
+            <lxabel for="p">Python</lxabel> <br>
+
+            <input type="checkbox" name="sql" id="s">
+            <label for="s">SQL</label> <br>
+
+            <input type="checkbox" name="selenium" id="s">
+            <label for="s">Selenium</label>
+
+            <br> <br>
+
+            <label for="fl">document: </label>
+            <input type="file" name="file" id="fl">
+
+            <br> <br>
+
+            <label for="s">STATES</label> <br>
+            <select name="states" id="s">
+                <option value="none">--none--</option>
+                <option value="telangana">Telangana</option>
+                <option value="andra pradesh">andra pradesh</option>
+                <option value="karnataka">karnataka</option>
+                <option value="kerala">kerala</option>
+                <option value="tamilnadu">tamilnadu</option>
+                <option value="delhi">delhi</option>
+                <option value="gujarath">gujarath</option>
+                <option value="maharastra">maharastra</option>
+                <option value="jammu and kashmir">jamu and kashmir</option>
+                <option value="bihar">bihar</option>
+            </select>
+
+            <br> <br>
+            <!-- <button>
+                submit
+            </button> -->
+
+            <input type="submit">
+            <input type="reset">
+
+
+
+            <!-- text            
+    date 
+    email 
+    radio
+    submit 
+    Reset
+    button 
+    checkbox
+    color 
+    datetime
+    datetimelocal
+    file 
+    hidden 
+    image 
+    month
+    number 
+    password
+    range 
+    search
+    time 
+    week 
+    url 
+    tel -->
+
+
+
+
+
+
+        </form>
+
+
+    </fieldset>
+
+
+</body>
+
+</html>
